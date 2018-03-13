@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace CoordConvertersBLL
 {
-    class Program
+    class DMSConverter
     {
-        static void Main(string[] args)
+        public double Dms2Dd(DMSCoord dmsCoord)
         {
+            double dd = 9999;
+            return dd;
         }
+
     }
 }
