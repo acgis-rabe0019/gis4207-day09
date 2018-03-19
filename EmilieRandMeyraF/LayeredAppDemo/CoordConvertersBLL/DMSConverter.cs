@@ -7,7 +7,7 @@ using CoordConvertersBLL;
 
 namespace CoordConvertersBLL
 { 
-    class DMSConverter
+    public class DMSConverter
     {
         public double Dms2Dd(DMSCoord dmsCoord)
         {
