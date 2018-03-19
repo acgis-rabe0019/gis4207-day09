@@ -26,7 +26,22 @@ namespace CoordConverterWinApp
 
         private void label1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Deg");
+        }
 
+        private void lblQuandrant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboQuandrant_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
