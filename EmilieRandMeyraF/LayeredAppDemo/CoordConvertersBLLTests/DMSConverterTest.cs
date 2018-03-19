@@ -13,6 +13,25 @@ namespace CoordConvertersBLLTests
         {
             //Arrange
             DMSConverter target = new DMSConverter();
+            double expected = 9999;
+
+            DMSCoord testCoord = new DMSCoord();
+            testCoord.deg = 75;
+            testCoord.min = 61;
+            testCoord.sec = 200;
+            testCoord.quandrant = Quandrant.N;
+
+            //Act
+            double actual = target.Dms2Dd(testCoord);
+            
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void DMS2Dd_ValidNcoord_Calculated()
+        {
+            //Arrange
+            DMSConverter target = new DMSConverter();
             double expected = 45.425533;
 
             DMSCoord testCoord = new DMSCoord();
@@ -23,10 +42,10 @@ namespace CoordConvertersBLLTests
 
             //Act
             double actual = target.Dms2Dd(testCoord);
-            
+
             //Assert
             Assert.AreEqual(expected, actual);
         }
-        
+
     }
 }
