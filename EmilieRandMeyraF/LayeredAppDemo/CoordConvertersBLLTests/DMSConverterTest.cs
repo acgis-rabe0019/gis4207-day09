@@ -16,7 +16,7 @@ namespace CoordConvertersBLLTests
             double expected = 9999;
 
             DMSCoord testCoord = new DMSCoord();
-            testCoord.deg = 75;
+            testCoord.deg = 71;
             testCoord.min = 61;
             testCoord.sec = 200;
             testCoord.quandrant = Quandrant.N;
