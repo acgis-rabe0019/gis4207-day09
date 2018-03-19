@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CoordConvertersBLL;
+
 
 namespace CoordConvertersBLLTests
 {
@@ -7,7 +9,7 @@ namespace CoordConvertersBLLTests
     public class DMSConverterTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void DMS2Dd_InvalidNcoord_Returns9999()
         {
         }
     }
