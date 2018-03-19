@@ -13,7 +13,6 @@ namespace CoordConvertersBLLTests
         {
             //Arrange
             DMSConverter target = new DMSConverter();
-            double dd = 0;
             double expected = dd;
 
             //Act
