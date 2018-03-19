@@ -13,13 +13,17 @@ namespace CoordConvertersBLLTests
         {
             //Arrange
             DMSConverter target = new DMSConverter();
-            double dd = 0;
-            double expected = dd;
+            double expected = 45.425533;
+
+            DMSCoord testCoord = new DMSCoord();
+            testCoord.deg = 45;
+            testCoord.min = 25;
+            testCoord.sec = 31.9188;
+            testCoord.quandrant = Quandrant.N;
 
             //Act
-            string actual = target.dmsCoord();
+            double actual = target.Dms2Dd(testCoord);
             
-
             //Assert
             Assert.AreEqual(expected, actual);
         }
