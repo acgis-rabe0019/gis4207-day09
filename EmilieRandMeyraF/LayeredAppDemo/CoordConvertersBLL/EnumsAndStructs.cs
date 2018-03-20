@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoordConvertersBLL
 {
-    public enum Quandrant
+    public enum Quadrant
     {
         N,
         S,
@@ -19,7 +19,7 @@ namespace CoordConvertersBLL
         public int deg;
         public int min;
         public double sec;
-        public Quandrant quandrant;
+        public Quadrant quadrant;
     }
 
 

@@ -19,7 +19,7 @@ namespace CoordConvertersBLLTests
             testCoord.deg = 71;
             testCoord.min = 61;
             testCoord.sec = 200;
-            testCoord.quandrant = Quandrant.N;
+            testCoord.quadrant = Quadrant.N;
 
             //Act
             double actual = target.Dms2Dd(testCoord);
@@ -38,13 +38,13 @@ namespace CoordConvertersBLLTests
             testCoord.deg = 45;
             testCoord.min = 25;
             testCoord.sec = 31.9188;
-            testCoord.quandrant = Quandrant.N;
+            testCoord.quadrant = Quadrant.N;
 
             //Act
             double actual = target.Dms2Dd(testCoord);
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual,0);
         }
 
     }

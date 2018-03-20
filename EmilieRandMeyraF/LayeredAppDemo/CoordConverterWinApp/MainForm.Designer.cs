@@ -28,131 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbIDd = new System.Windows.Forms.Label();
+            this.tbxDeg = new System.Windows.Forms.TextBox();
+            this.tbxMin = new System.Windows.Forms.TextBox();
+            this.tbxSec = new System.Windows.Forms.TextBox();
+            this.cboQuandrant = new System.Windows.Forms.ComboBox();
+            this.ldlDeg = new System.Windows.Forms.Label();
+            this.lblMin = new System.Windows.Forms.Label();
+            this.lblSec = new System.Windows.Forms.Label();
+            this.lblQuandrant = new System.Windows.Forms.Label();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lbIDd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(366, 661);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "lbIDd";
+            this.lbIDd.AutoSize = true;
+            this.lbIDd.Location = new System.Drawing.Point(98, 435);
+            this.lbIDd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbIDd.Name = "lbIDd";
+            this.lbIDd.Size = new System.Drawing.Size(80, 20);
+            this.lbIDd.TabIndex = 0;
+            this.lbIDd.Text = "Dec. Deg:";
+            this.lbIDd.Click += new System.EventHandler(this.lbIDd_Click);
             // 
-            // textBox1
+            // tbxDeg
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 38);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "tbxDeg";
+            this.tbxDeg.Location = new System.Drawing.Point(195, 80);
+            this.tbxDeg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxDeg.Name = "tbxDeg";
+            this.tbxDeg.Size = new System.Drawing.Size(58, 26);
+            this.tbxDeg.TabIndex = 1;
+            this.tbxDeg.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tbxMin
             // 
-            this.textBox2.Location = new System.Drawing.Point(345, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 38);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "tbxMin";
+            this.tbxMin.Location = new System.Drawing.Point(194, 148);
+            this.tbxMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxMin.Name = "tbxMin";
+            this.tbxMin.Size = new System.Drawing.Size(58, 26);
+            this.tbxMin.TabIndex = 2;
+            this.tbxMin.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // tbxSec
             // 
-            this.textBox3.Location = new System.Drawing.Point(344, 377);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 38);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "tbxSec";
+            this.tbxSec.Location = new System.Drawing.Point(194, 243);
+            this.tbxSec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSec.Name = "tbxSec";
+            this.tbxSec.Size = new System.Drawing.Size(58, 26);
+            this.tbxSec.TabIndex = 3;
+            this.tbxSec.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // comboBox1
+            // cboQuandrant
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(344, 470);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 39);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "cboQuandrant";
+            this.cboQuandrant.FormattingEnabled = true;
+            this.cboQuandrant.Items.AddRange(new object[] {
+            "N",
+            "S",
+            "E",
+            "W"});
+            this.cboQuandrant.Location = new System.Drawing.Point(194, 303);
+            this.cboQuandrant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboQuandrant.Name = "cboQuandrant";
+            this.cboQuandrant.Size = new System.Drawing.Size(70, 28);
+            this.cboQuandrant.TabIndex = 4;
             // 
-            // label2
+            // ldlDeg
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 32);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "lblDeg";
+            this.ldlDeg.AutoSize = true;
+            this.ldlDeg.Location = new System.Drawing.Point(139, 80);
+            this.ldlDeg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ldlDeg.Name = "ldlDeg";
+            this.ldlDeg.Size = new System.Drawing.Size(39, 20);
+            this.ldlDeg.TabIndex = 5;
+            this.ldlDeg.Text = "Deg";
             // 
-            // label3
+            // lblMin
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 235);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 32);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "lblMin";
+            this.lblMin.AutoSize = true;
+            this.lblMin.Location = new System.Drawing.Point(138, 152);
+            this.lblMin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMin.Name = "lblMin";
+            this.lblMin.Size = new System.Drawing.Size(34, 20);
+            this.lblMin.TabIndex = 6;
+            this.lblMin.Text = "Min";
+            this.lblMin.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lblSec
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(245, 377);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 32);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "lblSec";
+            this.lblSec.AutoSize = true;
+            this.lblSec.Location = new System.Drawing.Point(138, 243);
+            this.lblSec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSec.Name = "lblSec";
+            this.lblSec.Size = new System.Drawing.Size(37, 20);
+            this.lblSec.TabIndex = 7;
+            this.lblSec.Text = "Sec";
+            this.lblSec.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblQuandrant
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(158, 470);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 32);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "lblQuandrant";
+            this.lblQuandrant.AutoSize = true;
+            this.lblQuandrant.Location = new System.Drawing.Point(89, 303);
+            this.lblQuandrant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQuandrant.Name = "lblQuandrant";
+            this.lblQuandrant.Size = new System.Drawing.Size(85, 20);
+            this.lblQuandrant.TabIndex = 8;
+            this.lblQuandrant.Text = "Quandrant";
+            this.lblQuandrant.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(112, 788);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 52);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "btnCalculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(72, 508);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(100, 34);
+            this.btnCalculate.TabIndex = 9;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // button2
+            // btnClose
             // 
-            this.button2.Location = new System.Drawing.Point(505, 788);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 51);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "btnClose";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(284, 508);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(84, 33);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 916);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(466, 591);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.lblQuandrant);
+            this.Controls.Add(this.lblSec);
+            this.Controls.Add(this.lblMin);
+            this.Controls.Add(this.ldlDeg);
+            this.Controls.Add(this.cboQuandrant);
+            this.Controls.Add(this.tbxSec);
+            this.Controls.Add(this.tbxMin);
+            this.Controls.Add(this.tbxDeg);
+            this.Controls.Add(this.lbIDd);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "DMS Converter";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -163,17 +185,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbIDd;
+        private System.Windows.Forms.TextBox tbxDeg;
+        private System.Windows.Forms.TextBox tbxMin;
+        private System.Windows.Forms.TextBox tbxSec;
+        private System.Windows.Forms.ComboBox cboQuandrant;
+        private System.Windows.Forms.Label ldlDeg;
+        private System.Windows.Forms.Label lblMin;
+        private System.Windows.Forms.Label lblSec;
+        private System.Windows.Forms.Label lblQuandrant;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
